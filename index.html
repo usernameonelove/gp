@@ -339,17 +339,17 @@
   <main class="app">
     <header>
       <div>
-        <h1>Gym Progress</h1>
+        <h1>Gym Aleshka</h1>
         <div class="date" id="todayLabel"></div>
       </div>
       <div class="pill" id="weekStatus"><span class="dot"></span><span>0%</span></div>
     </header>
 
     <nav class="tabs">
-      <button class="tab active" data-tab="today">Сегодня</button>
-      <button class="tab" data-tab="history">История</button>
-      <button class="tab" data-tab="progress">Прогресс</button>
-      <button class="tab" data-tab="goals">Цели</button>
+      <button class="tab active" data-tab="today">today</button>
+      <button class="tab" data-tab="history">history</button>
+      <button class="tab" data-tab="progress">progress</button>
+      <button class="tab" data-tab="goals">goals</button>
     </nav>
 
     <section id="today" class="active">
@@ -361,7 +361,7 @@
 
       <div class="card">
         <div class="card-title">
-          <h2>Новая запись</h2>
+          <h2>new entry</h2>
           <span class="muted small">вес × повторы</span>
         </div>
         <div style="display:grid; gap:8px;">
@@ -375,14 +375,14 @@
             <input id="sets" type="number" inputmode="numeric" placeholder="Подходы" value="1" />
             <input id="note" placeholder="Заметка" />
           </div>
-          <button class="primary" id="addSet">Добавить</button>
+          <button class="primary" id="addSet">added</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-title">
-          <h2>Сегодня</h2>
-          <button class="danger" id="clearToday">Очистить</button>
+          <h2>today</h2>
+          <button class="danger" id="clearToday">clear</button>
         </div>
         <div id="todayList"></div>
       </div>
@@ -391,7 +391,7 @@
     <section id="history">
       <div class="card">
         <div class="card-title">
-          <h2>История</h2>
+          <h2>history</h2>
           <span class="muted small" id="totalWorkouts">0 тренировок</span>
         </div>
         <div id="historyList"></div>
@@ -401,7 +401,7 @@
     <section id="progress">
       <div class="card">
         <div class="card-title">
-          <h2>Статистика</h2>
+          <h2>statistics</h2>
           <span class="muted small">7 дней</span>
         </div>
         <div class="row">
@@ -416,7 +416,7 @@
 
       <div class="card">
         <div class="card-title">
-          <h2>Лучшие результаты</h2>
+          <h2>best result</h2>
           <span class="muted small">по упражнениям</span>
         </div>
         <div id="recordsList"></div>
@@ -438,25 +438,25 @@
     <section id="goals">
       <div class="card">
         <div class="card-title">
-          <h2>Цели</h2>
+          <h2>Goals</h2>
           <span class="muted small" id="goalProgress">0%</span>
         </div>
         <div class="segmented">
-          <button class="period active" data-period="day">День</button>
-          <button class="period" data-period="week">Неделя</button>
-          <button class="period" data-period="month">Месяц</button>
-          <button class="period" data-period="year">Год</button>
+          <button class="period active" data-period="day">Day</button>
+          <button class="period" data-period="week">Week</button>
+          <button class="period" data-period="month">Month</button>
+          <button class="period" data-period="year">Year</button>
         </div>
         <div style="display:grid; gap:8px;">
           <input id="goalInput" placeholder="Например: 3 тренировки" />
-          <button class="primary" id="addGoal">Добавить цель</button>
+          <button class="primary" id="addGoal">added goals</button>
         </div>
       </div>
 
       <div class="card">
         <div class="card-title">
-          <h2 id="goalTitle">День</h2>
-          <button class="danger" id="clearGoals">Очистить</button>
+          <h2 id="goalTitle">day</h2>
+          <button class="danger" id="clearGoals">clear</button>
         </div>
         <div id="goalsList"></div>
       </div>
